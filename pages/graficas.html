@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UTech</title>
+        <link rel="shortcut icon" href="../images/utech_logo-32x32.png">
+    <link rel="stylesheet" href="../main.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <header>
+         <div class="topnav">
+            <span id="fixtitl"><a href="../index.html"><img src="../images/utech-01.png" alt=""></a></span>
+                <ul class="nav-links">
+                    <li><a href="./graficas.html" class="btnanim">Graficas</a></li>
+                    <li><a href="./perifericos.html" class="btnanim">Perifericos</a></li>
+                    <li><a href="./monitores.html" class="btnanim">Monitores</a></li>
+                </ul>
+        </div>
+    </header>
+    <main>
+        <div>
+            <h1 class="titulo--categoria">Graficas</h1>
+            <form action="GET" class="form--cat">
+            <h3 class="subtitulo--categoria">Marca</h2>
+                <div><input type="radio" name="graficas" value="NVIDIA" /><span>Nvidia</span></div>
+                <div><input type="radio" name="graficas" value="AMD" /><span>Amd</span></div>
+                <h3 class="subtitulo--categoria">Modelo</h3>
+                <div><input type="radio" name="modelo" value="GT 210"><span>Gt 210</span></div>
+                <div><input type="radio" name="modelo" value="GTX 1050"><span>Gtx 1050</span></div>
+                <div><input type="radio" name="modelo" value="GTX 1660"><span>Gtx 1660</span></div>
+            </form>
+            
+        </div>
+        <div class="flex-container cat">
+            <div class="populated">
+                <a href="./out-of-stock.html">
+                    <img src="../images/grafica.jpeg" alt="Grafica RTX 3070 Geforce" class="cuadro-productos">
+                    <h2 class="titulo-precio">Grafica RTX 3070 Geforce</h2>
+                    <span class="precio">$280.000,00</span>
+                    <h3 class="btnanim posbuy btnbuy">Comprar</h3>
+                </a>
+        
+            </div>
+            <div class="populated">
+                <a href="./out-of-stock.html">
+                    <img src="../images/rx-6600xt.jpg" alt="RX 6600 XT" class="cuadro-productos">
+                    <h2 class="titulo-precio">Grafica RX 6600 XT Rog</h2>
+                    <span class="precio">$60.000,00</span>
+                    <h3 class="btnanim posbuy btnbuy">Comprar</h3>
+                </a>
+        
+            </div>
+            <div class="populated">
+                <a href="./out-of-stock.html">
+                    <img src="../images/rtx-2080ti.jpg" alt="RTX 2080 Ti" class="cuadro-productos">
+                    <h2 class="titulo-precio">Grafica RTX 2080 Ti EVGA</h2>
+                    <span class="precio">$180.000,00</span>
+                    <h3 class="btnanim posbuy btnbuy">Comprar</h3>
+                </a>
+        
+            </div>
+        </div>
+
+    </main>
+    <footer class="flex-container">
+        <div class="author">
+            <p>UTECH|Todos los derechos reservados</p>
+        </div>
+        <div class="social-medias">
+            <ul>
+                <li><a href=""><img src="../images/whatsapp.png" alt=""></a></li>
+                <li><a href=""><img src="../images/instagram.png" alt=""></a></li>
+                <li><a href=""><img src="../images/facebook.png" alt=""></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

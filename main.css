@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    background-color: #323232;
+}
+#titulo {
+    font-family: "a_atmosphericregular";
+    height: 50px;
+    padding-top: 16px;
+    padding-left: 10px;
+    display: inline;
+    top: 16px;
+    position: relative;
+}
+header a {
+    text-decoration: none;
+}
+.centro {
+    text-align: center;
+}
+header {
+    background-color: #202020;
+    height: 66px;
+    margin-bottom: 10px;
+}
+.banner {
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: center;
+    height: 300px;
+    width: 833px;
+}
+.tipo-comercio {
+    width: 325px;
+    height: 300px;
+    position: relative;
+}
+.cuadro-productos {
+    width: 300px;
+    height: 300px; 
+    position: absolute;
+    margin: 25px 0 0 23px;
+}
+.titulo-oferta {
+    position: absolute;
+}
+.imagen-oferta {
+    position: absolute;
+    top: 1.9em;
+    left: 1.9em;
+}
+.borde {
+    border: black;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: black;
+    height: 100px;
+    width: 300px;
+}
+.cuadro-grafica {
+  top: 40px;
+  left: 15em;
+}
+.cuadro-perif {
+    top: 40px; /* no varia */
+    left: 50em;
+}
+.cuadro-monit {
+
+    top: 40px;
+    left:  85em;
+}
+/* REVISAR */
+.glow-on-hover {
+width: 300px;
+height: 100px;
+border: none;
+outline: none;
+color: #fff;
+background: #111;
+cursor: pointer;
+position: relative;
+z-index: 0;
+border-radius: 10px;
+}
+
+.glow-on-hover:before {
+content: '';
+background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+position: absolute;
+top: -2px;
+left:-2px;
+background-size: 400%;
+z-index: -1;
+filter: blur(5px);
+width: calc(100% + 4px);
+height: calc(100% + 4px);
+animation: glowing 20s linear infinite;
+opacity: 0;
+transition: opacity .3s ease-in-out;
+border-radius: 10px;
+}
+
+.glow-on-hover:active {
+color: #000
+}
+
+.glow-on-hover:active:after {
+background: transparent;
+}
+
+.glow-on-hover:hover:before {
+opacity: 1;
+}
+
+.glow-on-hover:after {
+z-index: -1;
+content: '';
+position: absolute;
+width: 100%;
+height: 100%;
+background: #111;
+left: 0;
+top: 0;
+border-radius: 10px;
+}
+@keyframes glowing {
+0% { background-position: 0 0; }
+50% { background-position: 400% 0; }
+100% { background-position: 0 0; }
+}
+.oferta {
+width: 997px;
+height: 200px;
+position: relative;
+}
+.carousel-cell {
+width: 60%;
+text-align: center;
+
+}
+.imgb {
+width: 1050px;
+height: 375px;
+}
+.topnav {
+    position: relative;
+    height: 100%;
+}
+.navegacion {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.nav-links {
+    position: absolute;
+    display: inline-block;
+    left: 15em;
+    height: 100%;
+    width: 600px;
+}
+.btnanim {
+    color: #fff;
+    left: 10px;
+    top: 1.5em;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+#fixtitl {
+    position: absolute;
+}
+.nav-links li {
+    display: inline-block;
+    margin-right: 15px;
+    transition: all 0.3s ease-in-out;
+}
+.nav-links li:hover a {
+    color: #ffffff;
+}
+.nav-links li:hover a::before {
+    visibility: visible;
+    transform: scale(1, 1);
+}
+.nav-links li a {
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 0 7px 0 7px;
+    margin: 0 0 10px;
+    text-decoration: none;
+    position: relative;
+    margin-right: 25px;
+}
+.nav-links li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -10px;
+    left: 0px;
+    background-color: #ffffff;
+    transition: all 0.2s ease-in-out;
+    transform: scale(0, 0);
+    visibility: hidden;
+}
+.flex-container {
+    display: flex;
+}
+.cuadro-populated {
+    width: 100%;
+    height: 700px;
+}
+.hor {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.populated {
+    border: solid;
+    border-color: #1e1e1e;
+    width: 350px;
+    height: 470px;
+    border-radius: 10px;
+    margin: 0 35px 20px 35px;
+
+}
+.populated a {
+    text-decoration: none;
+}
+.precio {
+    position: relative;
+    color: #5ca241;
+    top: 340px;
+    left: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.titulo-precio {
+    position: relative;
+    top: 330px;
+    left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+.posbuy {
+    position: relative;
+    top: 350px;
+    left: 20px;
+}
+.btnbuy {
+    background-color: rgb(125, 124, 125);
+    border: none;
+    opacity: 0.6;
+    transition: 0.3s;
+    width: 150px;
+    height: 32px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 5px;
+}
+.btnbuy:hover { opacity: 1;}
+footer {
+    background-color: #202020;
+    padding: 20px;
+    width: auto;
+    justify-content: end;
+    margin-top: 300px;
+}
+.author {
+    margin-right: auto;
+}
+.author p {
+    font-family: 'Montserrat', sans-serif;
+    top: 8px;
+}
+.social-medias li {
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+.social-medias li img {
+    border-radius: 10px;
+}
+.titulo--categoria {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    position: absolute;
+    top: 100px;
+    left: 15px;
+    display: inline-block;
+}
+.subtitulo--categoria {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    position: relative;
+    right: 12px;
+    margin: 5px 0 10px 0;
+    font-weight: lighter;
+}
+.form--cat {
+    position: relative;
+    top: 90px;
+    left: 25px;
+    display: inline-block;
+}
+.cat {
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 85%;
+    margin-left: auto;
+
+}
+#out-stock {
+    display: flex;
+    justify-content: center;
+    height: 700px;
+}
+#out-stock img {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    left: 170px;
+}
+.pos--flex {
+    position: relative;
+    font-size: 42.5px;
+    margin-top: 150px;
+}
+.pos--flex a h3 {
+    left: 150px;
+    position: relative;
+    width: 355px;
+    height: 32px;
+    margin-top: 15px;
+}
+.pos--flex a {
+    text-decoration: none;
+}
+#fixtitl a img {
+    width: 141px;
+    height: 32px;
+    margin: 16px 0 0 10px;
+}
+.recomendaciones {
+    position: relative;
+    margin: 25px 0 0 15px;
+}
+.titulo--recomendaciones {
+    font-size: 40px;
+}

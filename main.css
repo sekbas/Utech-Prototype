@@ -313,22 +313,20 @@ footer {
     height: 700px;
 }
 #out-stock img {
-    width: 300px;
-    height: 300px;
-    position: relative;
-    left: 170px;
+    width: 345px;
+    height: 345px;
 }
 .pos--flex {
     position: relative;
     font-size: 42.5px;
     margin-top: 150px;
 }
+.pos--flex h1 {
+    text-align: center;
+}
 .pos--flex a h3 {
-    left: 150px;
-    position: relative;
     width: 355px;
     height: 32px;
-    margin-top: 15px;
 }
 .pos--flex a {
     text-decoration: none;
@@ -431,6 +429,18 @@ footer {
         width: 200px;
         height: 200px;
         margin: 25px 0 0 50px
+    }
+    #out-stock img {
+        width: 320px;
+        height: 320px;
+    }
+    #out-stock .btnbuy {
+        font-size: 1.3rem;
+    }
+    .pos--flex a h3 {
+        width: 20rem;
+        height: 23px;
+
     }
 }
 @media (max-width:320px) {

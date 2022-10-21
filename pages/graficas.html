@@ -16,13 +16,34 @@
     </head>
 <body>
     <header>
-         <div class="topnav grid-container">
+        <div class="topnav grid-container">
             <span id="fixtitl"><a href="../index.html"><img src="../images/utech-01.png" alt=""></a></span>
-                <ul class="nav-links">
-                    <li><a href="./graficas.html" class="btnanim">Graficas</a></li>
-                    <li><a href="./perifericos.html" class="btnanim">Perifericos</a></li>
-                    <li><a href="./monitores.html" class="btnanim">Monitores</a></li>
-                </ul>
+            <ul class="nav-links" id="desk-links">
+                <li><a href="./graficas.html" class="btnanim">Graficas</a></li>
+                <li><a href="./perifericos.html" class="btnanim">Perifericos</a></li>
+                <li><a href="./monitores.html" class="btnanim">Monitores</a></li>
+            </ul>
+            <nav class="navbar navbar-expand-sm navbar-dark nav-links">
+                <div class="container-fluid navbar--fix">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./graficas.html">Graficas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./perifericos.html">Perifericos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./monitores.html">Monitores</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
     <main>
@@ -82,5 +103,8 @@
             </ul>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous">
+    </script>
 </body>
 </html>

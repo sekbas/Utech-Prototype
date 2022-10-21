@@ -1,84 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Utech</title>
     <link rel="shortcut icon" href="../images/utech_logo-32x32.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../main.css">
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <link rel="stylesheet" href="../css/stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="topnav grid-container">
-           <span id="fixtitl"><a href="../index.html"><img src="../images/utech-01.png" alt=""></a></span>
-               <ul class="nav-links">
-                   <li><a href="./graficas.html" class="btnanim">Graficas</a></li>
-                   <li><a href="./perifericos.html" class="btnanim">Perifericos</a></li>
-                   <li><a href="./monitores.html" class="btnanim">Monitores</a></li>
-               </ul>
-       </div>
-   </header>
-   <main>
-    <div>
-        <h1 class="titulo--categoria">Perifericos</h1>
-        <form action="GET" class="form--cat">
-        <h3 class="subtitulo--categoria">Marca</h2>
-            <div><input type="radio" name="marca" value="Logitech" /><span>Logitech</span></div>
-            <div><input type="radio" name="marca" value="Redragon" /><span>Redragon</span></div>
-            <h3 class="subtitulo--categoria">Tipos de Perifericos</h3>
-            <div><input type="radio" name="tipo-perf" value="Mouse"><span>Mouse</span></div>
-            <div><input type="radio" name="tipo-perf" value="Headset"><span>Auriculares</span></div>
-        </form>
-        
-    </div>
-    <div class="flex-container cat">
-        <div class="populated">
-            <a href="./out-of-stock.html">
-                <img src="../images/mouse.jpg" alt="Logitech G203" class="cuadro-productos">
-                <h2 class="titulo-precio">Logitech G203</h2>
-                <span class="precio">$3.400,00</span>
-                <h3 class="btnanim posbuy btnbuy">Comprar</h3>
-            </a>
-    
+            <span id="fixtitl"><a href="../index.html"><img src="../images/utech-01.png" alt=""></a></span>
+            <ul class="nav-links" id="desk-links">
+                <li><a href="./graficas.html" class="btnanim">Graficas</a></li>
+                <li><a href="./perifericos.html" class="btnanim">Perifericos</a></li>
+                <li><a href="./monitores.html" class="btnanim">Monitores</a></li>
+            </ul>
+            <nav class="navbar navbar-expand-sm navbar-dark nav-links">
+                <div class="container-fluid navbar--fix">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./graficas.html">Graficas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./perifericos.html">Perifericos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./monitores.html">Monitores</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
-        <div class="populated">
-            <a href="./out-of-stock.html">
-                <img src="../images/auriculares-redragon-zeus-x.jpeg" alt="Auriculares Redragon Zeus X" class="cuadro-productos">
-                <h2 class="titulo-precio">Auriculares Redragon Zeus X</h2>
-                <span class="precio">$14.000,00</span>
-                <h3 class="btnanim posbuy btnbuy">Comprar</h3>
-            </a>
-    
+    </header>
+    <main>
+        <div>
+            <h1 class="titulo--categoria">Perifericos</h1>
+            <form action="GET" class="form--cat">
+                <h3 class="subtitulo--categoria">Marca</h2>
+                    <div><input type="radio" name="marca" value="Logitech" /><span>Logitech</span></div>
+                    <div><input type="radio" name="marca" value="Redragon" /><span>Redragon</span></div>
+                    <h3 class="subtitulo--categoria">Tipos de Perifericos</h3>
+                    <div><input type="radio" name="tipo-perf" value="Mouse"><span>Mouse</span></div>
+                    <div><input type="radio" name="tipo-perf" value="Headset"><span>Auriculares</span></div>
+            </form>
+
         </div>
-        <div class="populated">
-            <a href="./out-of-stock.html">
-                <img src="../images/mouse-redragon-cobra.jpg" alt="Mouse Redragon Cobra" class="cuadro-productos">
-                <h2 class="titulo-precio">Mouse Redragon Cobra</h2>
-                <span class="precio">$6.500,00</span>
-                <h3 class="btnanim posbuy btnbuy">Comprar</h3>
-            </a>
-    
+        <div class="flex-container cat">
+            <div class="populated">
+                <a href="./out-of-stock.html">
+                    <img src="../images/mouse.jpg" alt="Logitech G203" class="cuadro-productos">
+                    <h2 class="titulo-precio">Logitech G203</h2>
+                    <span class="precio">$3.400,00</span>
+                    <h3 class="btnanim posbuy btnbuy">Comprar</h3>
+                </a>
+
+            </div>
+            <div class="populated">
+                <a href="./out-of-stock.html">
+                    <img src="../images/auriculares-redragon-zeus-x.jpeg" alt="Auriculares Redragon Zeus X"
+                        class="cuadro-productos">
+                    <h2 class="titulo-precio">Auriculares Redragon Zeus X</h2>
+                    <span class="precio">$14.000,00</span>
+                    <h3 class="btnanim posbuy btnbuy">Comprar</h3>
+                </a>
+
+            </div>
+            <div class="populated">
+                <a href="./out-of-stock.html">
+                    <img src="../images/mouse-redragon-cobra.jpg" alt="Mouse Redragon Cobra" class="cuadro-productos">
+                    <h2 class="titulo-precio">Mouse Redragon Cobra</h2>
+                    <span class="precio">$6.500,00</span>
+                    <h3 class="btnanim posbuy btnbuy">Comprar</h3>
+                </a>
+
+            </div>
         </div>
-    </div>
-</main>
-<footer class="flex-container">
-    <div class="author">
-        <p>UTECH|Todos los derechos reservados</p>
-    </div>
-    <div class="social-medias">
-        <ul>
-            <li><a href=""><img src="../images/whatsapp.png" alt=""></a></li>
-            <li><a href=""><img src="../images/instagram.png" alt=""></a></li>
-            <li><a href=""><img src="../images/facebook.png" alt=""></a></li>
-        </ul>
-    </div>
-</footer>
+    </main>
+    <footer class="flex-container">
+        <div class="author">
+            <p>UTECH|Todos los derechos reservados</p>
+        </div>
+        <div class="social-medias">
+            <ul>
+                <li><a href=""><img src="../images/whatsapp.png" alt=""></a></li>
+                <li><a href=""><img src="../images/instagram.png" alt=""></a></li>
+                <li><a href=""><img src="../images/facebook.png" alt=""></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>

@@ -297,12 +297,14 @@ footer {
     top: 90px;
     left: 25px;
     display: inline-block;
+    margin: 0 55px 95px 0;
 }
 .cat {
     flex-wrap: wrap;
     flex-direction: row;
-    width: 85%;
+    width: 95%;
     margin-left: auto;
+    justify-content: center;
 
 }
 #out-stock {
